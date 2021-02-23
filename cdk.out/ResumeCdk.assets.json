@@ -1,0 +1,19 @@
+{
+  "version": "7.0.0",
+  "files": {
+    "19a2ab845bee1ab25c01619d871711303b4df9eb5f4b692fccfd828ef4e17c7b": {
+      "source": {
+        "path": "ResumeCdk.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "19a2ab845bee1ab25c01619d871711303b4df9eb5f4b692fccfd828ef4e17c7b",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

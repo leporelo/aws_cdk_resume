@@ -1,0 +1,722 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "ResumeCdkWebsitedeploywebsitetos3837ED70E.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ResumeCdkWebsitedeploywebsitetos3837ED70E.assets.json",
+        "requiresBootstrapStackVersion": 4
+      }
+    },
+    "ResumeCdkWebsitedeploywebsitetos3837ED70E": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ResumeCdkWebsitedeploywebsitetos3837ED70E.template.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/827b1f52c756f76db494eda21d3ef7be455ae4258ecc1f14a5c36144d36b0af6",
+        "requiresBootstrapStackVersion": 4,
+        "additionalDependencies": [
+          "ResumeCdkWebsitedeploywebsitetos3837ED70E.assets"
+        ],
+        "stackName": "Website-deploy-website-to-s3"
+      },
+      "dependencies": [
+        "ResumeCdkWebsitedeploywebsitetos3837ED70E.assets"
+      ],
+      "metadata": {
+        "/ResumeCdk/Website/deploy-website-to-s3/HitCounter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HitCounter344DD67C",
+            "trace": [
+              "new Table (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:401:22)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CounterHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CounterHandlerServiceRoleAB9893FB",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function.js:66:35)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CounterHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CounterHandlerServiceRoleDefaultPolicy75F62DD7",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Table.combinedGrant (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:338:35)",
+              "Table.grantReadWriteData (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:156:21)",
+              "_wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CounterHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CounterHandlerA4ADB636",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function.js:115:26)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:333:26)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:211:22)",
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:349:18)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:215:26)",
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:349:18)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DAcac5c84abd1600613c401ddb50f0e83e",
+            "trace": [
+              "new Deployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:44:25)",
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:226:38)",
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:59:26)",
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:234:36)",
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:238:13)",
+              "new RestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:351:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:21:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:214:26)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:263:9)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/{proxy+}/ANY/ApiPermission.ResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7ANYproxyA31AD911",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:286:22)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.ResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7ANYproxy9EE5A28E",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:286:22)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:286:22)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/ANY/ApiPermission.ResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7ANY3763D69D",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:38:22)",
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "RootResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:283:37)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/ANY/ApiPermission.Test.ResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestResumeCdkWebsitedeploywebsitetos3Endpoint144F6AE7ANY388DEA3C",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:45:26)",
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:39:40)",
+              "RootResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:283:37)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/method.js:55:26)",
+              "RootResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:30:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:283:37)",
+              "new ProxyResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:271:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:27:23)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/ApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiEndpoint",
+            "trace": [
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/DeployWebsiteCDK/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployWebsiteCDKCustomResource2291A60E",
+            "trace": [
+              "new CustomResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/custom-resource.js:27:25)",
+              "new BucketDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:49:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Function (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function.js:66:35)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:76:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:23:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:26:25)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-iam/lib/grant.js:39:30)",
+              "Import.grant (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:321:31)",
+              "Import.grantRead (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:225:21)",
+              "Asset.grantRead (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:93:21)",
+              "Object.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:58:23)",
+              "BucketDeployment.props.sources.map (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:40:62)",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:40:39)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/function.js:115:26)",
+              "SingletonFunction.ensureLambda (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:76:16)",
+              "new SingletonFunction (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:23:36)",
+              "new BucketDeployment (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:26:25)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/OAI-user-s3/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OAIusers3CEEDA731",
+            "trace": [
+              "new OriginAccessIdentity (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-cloudfront/lib/origin_access_identity.js:38:25)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/ResumeDistribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ResumeDistributionCFDistributionCB867896",
+            "trace": [
+              "new CloudFrontWebDistribution (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-cloudfront/lib/web_distribution.js:289:30)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/ANAME/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANAMED193376A",
+            "trace": [
+              "new RecordSet (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53/lib/record-set.js:67:27)",
+              "new ARecord (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53/lib/record-set.js:98:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/AWSCloudFrontPartitionHostedZoneIdMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCloudFrontPartitionHostedZoneIdMap",
+            "trace": [
+              "Function.getHostedZoneId (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53-targets/lib/cloudfront-target.js:24:105)",
+              "CloudFrontTarget.bind (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53-targets/lib/cloudfront-target.js:41:44)",
+              "new RecordSet (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53/lib/record-set.js:72:79)",
+              "new ARecord (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/aws-route53/lib/record-set.js:98:9)",
+              "obj._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "construct (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "Stage.synth (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "CdkStage.addApplication (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/stage.js:51:30)",
+              "CdkPipeline.addApplicationStage (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/pipeline.js:136:15)",
+              "_wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "construct (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "Stage.synth (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "CdkStage.addApplication (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/stage.js:51:30)",
+              "CdkPipeline.addApplicationStage (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/pipeline.js:136:15)",
+              "_wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:340:19)",
+              "DefaultStackSynthesizer.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:157:13)",
+              "construct (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:142:35)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "synthesizeTree (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:136:5)",
+              "Object.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:32:5)",
+              "Stage.synth (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "CdkStage.addApplication (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/stage.js:51:30)",
+              "CdkPipeline.addApplicationStage (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/pipeline.js:136:15)",
+              "_wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ResumeCdk/Website/deploy-website-to-s3/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:348:5)",
+              "DefaultStackSynthesizer.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:157:13)",
+              "construct (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:142:35)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "synthesizeTree (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:136:5)",
+              "Object.synthesize (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/private/synthesis.js:32:5)",
+              "Stage.synth (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "CdkStage.addApplication (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/stage.js:51:30)",
+              "CdkPipeline.addApplicationStage (/tmp/jsii-kernel-BJ31nX/node_modules/@aws-cdk/pipelines/lib/pipeline.js:136:15)",
+              "_wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/david/cdk/ResumeCDK/.venv/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
